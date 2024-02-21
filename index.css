@@ -95,20 +95,50 @@ main {
   color: #777777;
 }
 
+.auctionOffers {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
 article {
   width: 80%;
 }
 article .offerBottom {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background-color: #cccccc;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 0 25px;
+  margin-top: -5px;
+}
+article .offerBottom > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+article .bottomTop {
+  padding-top: 20px;
+}
+article .series {
+  color: #ff8039;
 }
 article .price {
-  height: 22px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 10px;
 }
-article .price img {
-  height: 22px;
+article p {
+  color: #999999;
+  font-size: 15px;
+  margin: 1px 0;
+}
+article h3 {
+  margin: 10px 0;
+}
+article .bottomBot {
+  padding-bottom: 20px;
 }/*# sourceMappingURL=index.css.map */
