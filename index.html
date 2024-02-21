@@ -13,16 +13,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="index.css">
   <title>0221 ATSISKAITYMAS</title>
 </head>
 
 <body>
   <header>
-    <div>
+    <div class="headerLeft">
       <img src="Images/other/logo.svg" alt="nftlanding logo">
     </div>
-    <div>
+    <div class="headerRight">
+      <i class="fa-solid fa-bars"></i>
       <nav>
         <a href="featureslink">Features</a>
         <a href="aboutlink">About</a>
@@ -33,101 +34,49 @@
   </header>
   <main>
     <div class="noOther">
-      <div class="noOtherLeft">
-        <p class="launching">LAUNCHING SOON</p>
-        <h1>An NFT like no other</h1>
-        <p>Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live.</p>
-        <button class="signUpButton">Sign Up</button>
-      </div>
-      <div class="noOtherRight">
-        <img src="Images/other/graphic.png" alt="nft graphic">
+      <div class="container">
+        <div class="noOtherLeft">
+          <p class="launching">LAUNCHING SOON</p>
+          <h1>An NFT like no other</h1>
+          <p>Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live.</p>
+          <button class="signUpButton">Sign Up</button>
+        </div>
+        <div class="noOtherRight">
+          <img src="Images/other/graphic.png" alt="nft graphic">
+        </div>
       </div>
     </div>
     <div class="earlyBirds">
-      <h3>Free NFT for early birds</h3>
-      <p>Sign up today and you'll get a free NFT when we launch</p>
+      <div class="container">
+        <h3>Free NFT for early birds</h3>
+        <p>Sign up today and you'll get a free NFT when we launch</p>
+      </div>
     </div>
     <div class="companies">
-      <img src="Images/companies/1.svg" alt="boomerang logo">
-      <img src="Images/companies/2.svg" alt="blimp logo">
-      <img src="Images/companies/3.svg" alt="qrco logo">
-      <img src="Images/companies/4.svg" alt="opendoor logo">
-      <img src="Images/companies/5.svg" alt="droplet logo">
+      <div class="container">
+        <img src="Images/companies/1.svg" alt="boomerang logo">
+        <img src="Images/companies/2.svg" alt="blimp logo">
+        <img src="Images/companies/3.svg" alt="qrco logo">
+        <img class="hideInMobile" src="Images/companies/4.svg" alt="opendoor logo">
+        <img src="Images/companies/5.svg" alt="droplet logo">
+      </div>
     </div>
     <div class="auction">
-      <div class="auctionText">
-        <h3>LE Super Rare Auction</h3>
-        <p>We have released four limited edition NFTs early which can be bid on via <a href="opensealink">OpenSea</a>
-        </p>
-      </div>
-      <div class="autionOffers">
-        <article>
-          <div class="offerTop">
-            <img src="Images/ntfs/ntf-1.svg" alt="">
-          </div>
-          <div class="offerBottom">
-            <div class="offerBottomLeft">
-              <p class="series">GLOOP SERIES</p>
-              <h3>Purple Man</h3>
-              <p class="number">#12983</p>
-            </div>
-            <div class="offerBottomRight">
-              <p class="bid">TOP BID</p>
-              <div class="price">
-                <img src="Images/other/eth.svg" alt="eth logo">
-                <h3>2.99 ETH</h3>
-              </div>
-              <p class="time">1 day left</p>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="offerTop">
-            <img src="Images/ntfs/nft-2.svg" alt="">
-          </div>
-          <div class="offerBottom">
-            <div class="offerBottomLeft">
-              <p class="series">GLOOP SERIES</p>
-              <h3>Beige</h3>
-              <p class="number">#12983</p>
-            </div>
-            <div class="offerBottomRight">
-              <p class="bid">TOP BID</p>
-              <div class="price">
-                <img src="Images/other/eth.svg" alt="eth logo">
-                <h3>2.99 ETH</h3>
-              </div>
-              <p class="time">1 day left</p>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="offerTop">
-            <img src="Images/ntfs/ntf-3.svg" alt="">
-          </div>
-          <div class="offerBottom">
-            <div class="offerBottomLeft">
-              <p class="series">GLOOP SERIES</p>
-              <h3>Red Man</h3>
-              <p class="number">#12983</p>
-            </div>
-            <div class="offerBottomRight">
-              <p class="bid">TOP BID</p>
-              <div class="price">
-                <img src="Images/other/eth.svg" alt="eth logo">
-                <h3>2.99 ETH</h3>
-              </div>
-              <p class="time">1 day left</p>
-            </div>
-          </div>
+      <div class="container">
+        <div class="auctionText">
+          <h2>LE Super Rare Auction</h2>
+          <p>We have released four limited edition NFTs early which can be bid on via <a href="opensealink">OpenSea</a>.
+          </p>
+        </div>
+        <div class="auctionOffers">
           <article>
             <div class="offerTop">
-              <img src="Images/ntfs/ntf-4.svg" alt="">
+              <img src="Images/ntfs/ntf-1.svg" alt="">
             </div>
             <div class="offerBottom">
               <div class="offerBottomLeft">
                 <p class="series">GLOOP SERIES</p>
-                <h3>Green</h3>
+                <h3>Purple Man</h3>
                 <p class="number">#12983</p>
               </div>
               <div class="offerBottomRight">
@@ -140,59 +89,124 @@
               </div>
             </div>
           </article>
+          <article>
+            <div class="offerTop">
+              <img src="Images/ntfs/nft-2.svg" alt="">
+            </div>
+            <div class="offerBottom">
+              <div class="offerBottomLeft">
+                <p class="series">GLOOP SERIES</p>
+                <h3>Beige</h3>
+                <p class="number">#12983</p>
+              </div>
+              <div class="offerBottomRight">
+                <p class="bid">TOP BID</p>
+                <div class="price">
+                  <img src="Images/other/eth.svg" alt="eth logo">
+                  <h3>2.99 ETH</h3>
+                </div>
+                <p class="time">1 day left</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="offerTop">
+              <img src="Images/ntfs/ntf-3.svg" alt="">
+            </div>
+            <div class="offerBottom">
+              <div class="offerBottomLeft">
+                <p class="series">GLOOP SERIES</p>
+                <h3>Red Man</h3>
+                <p class="number">#12983</p>
+              </div>
+              <div class="offerBottomRight">
+                <p class="bid">TOP BID</p>
+                <div class="price">
+                  <img src="Images/other/eth.svg" alt="eth logo">
+                  <h3>2.99 ETH</h3>
+                </div>
+                <p class="time">1 day left</p>
+              </div>
+            </div>
+            <article>
+              <div class="offerTop">
+                <img src="Images/ntfs/ntf-4.svg" alt="">
+              </div>
+              <div class="offerBottom">
+                <div class="offerBottomLeft">
+                  <p class="series">GLOOP SERIES</p>
+                  <h3>Green</h3>
+                  <p class="number">#12983</p>
+                </div>
+                <div class="offerBottomRight">
+                  <p class="bid">TOP BID</p>
+                  <div class="price">
+                    <img src="Images/other/eth.svg" alt="eth logo">
+                    <h3>2.99 ETH</h3>
+                  </div>
+                  <p class="time">1 day left</p>
+                </div>
+              </div>
+            </article>
+        </div>
       </div>
     </div>
     <div class="noOther">
-      <div class="noOtherLeft">
-        <p class="launching">LAUNCHING SOON</p>
-        <h2>An NFT like no other</h2>
-        <p>Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live.</p>
-        <button class="signUpButton">Sign Up</button>
-      </div>
-      <div class="noOtherRight">
-        <img src="Images/other/upsell-footer-image.svg" alt="nft graphic">
+      <div class="container">
+        <div class="noOtherLeft">
+          <p class="launching">LAUNCHING SOON</p>
+          <h2>An NFT like no other</h2>
+          <p>Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live.</p>
+          <button class="signUpButton">Sign Up</button>
+        </div>
+        <div class="noOtherRight">
+          <img src="Images/other/upsell-footer-image.svg" alt="nft graphic">
+        </div>
       </div>
     </div>
   </main>
   <footer>
-    <div class="footLeft">
-      <img src="Images/other/logo.svg" alt="nftlanding logo">
-      <p>Exclusive NFT Collection</p>
-      <div class="socialLogo">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-tiktok"></i>
+    <div class="container">
+      <div class="footLeft">
+        <img src="Images/other/logo.svg" alt="nftlanding logo">
+        <p>Exclusive NFT Collection</p>
+        <div class="socialLogo">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+      </div>
+      <div class="footRight">
+        <nav>
+          <h4>ABOUT</h4>
+          <a href="aboutlink">About</a>
+          <a href="termslink">Terms</a>
+          <a href="legallink">Legal</a>
+        </nav>
+        <nav>
+          <h4>NFT</h4>
+          <a href="opensealink">OpenSea</a>
+          <a href="makerlink">Maker</a>
+          <a href="learnlink">Learn</a>
+        </nav>
+        <nav>
+          <h4>CONTACTS</h4>
+          <a href="presslink">Press</a>
+          <a href="supportlink">Support</a>
+        </nav>
+        <nav>
+          <h4>SOCIAL</h4>
+          <a href="twitterlink">Twitter</a>
+          <a href="instagramlink">Instagram</a>
+        </nav>
+      </div>
+      <div class="footBottom">
+        <p>&copy; Copyright 2022 NFTlanding</p>
+        <p>Launching August 2022</p>
       </div>
     </div>
-    <div class="footRight">
-      <nav>
-        <h4>ABOUT</h4>
-        <a href="aboutlink">About</a>
-        <a href="termslink">Terms</a>
-        <a href="legallink">Legal</a>
-      </nav>
-      <nav>
-        <h4>NFT</h4>
-        <a href="opensealink">OpenSea</a>
-        <a href="makerlink">Maker</a>
-        <a href="learnlink">Learn</a>
-      </nav>
-      <nav>
-        <h4>CONTACTS</h4>
-        <a href="presslink">Press</a>
-        <a href="supportlink">Support</a>
-      </nav>
-      <nav>
-        <h4>SOCIAL</h4>
-        <a href="twitterlink">Twitter</a>
-        <a href="instagramlink">Instagram</a>
-      </nav>
-    </div>
-    <div class="footBottom">
-      <p>&copy; Copyright 2022 NFTlanding</p>
-      <p>Launching August 2022</p>
-    </div>
+
   </footer>
 </body>
 

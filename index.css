@@ -1,4 +1,114 @@
 html {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header div {
+  padding: 20px;
+}
+header .headerRight {
+  color: #555555;
+}
+header nav {
+  display: none;
+}
+
+main {
+  background-color: white;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.noOther > div {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+.noOther > div .launching {
+  color: #ff3998;
+}
+.noOther > div img {
+  width: 200px;
+}
+.noOther > div p {
+  color: #777777;
+}
+
+.signUpButton {
+  background-color: white;
+  padding: 20px 50px;
+  border: solid 5px black;
+  border-radius: 40px;
+}
+
+.earlyBirds {
+  height: 350px;
+  background-image: url(Images/other/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.earlyBirds .container {
+  padding-top: 100px;
+}
+.earlyBirds h3 {
+  font-size: 40px;
+}
+.earlyBirds p {
+  font-size: 20px;
+}
+
+.companies > .container {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+}
+
+.hideInMobile {
+  display: none;
+}
+
+.auctionText h2 {
+  margin-top: 60px;
+  font-size: 40px;
+}
+.auctionText p {
+  color: #777777;
+  font-size: 22px;
+}
+.auctionText a {
+  color: #777777;
+}
+
+article {
+  width: 80%;
+}
+article .offerBottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: #cccccc;
+}
+article .price {
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+article .price img {
+  height: 22px;
 }/*# sourceMappingURL=index.css.map */
