@@ -9,16 +9,17 @@ body {
 
 header {
   background-color: white;
+}
+header .container {
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-header div {
-  padding: 20px;
-}
-header .headerRight {
-  color: #555555;
+header .burger {
+  color: #999999;
+  font-size: 20px;
 }
 header nav {
   display: none;
@@ -39,13 +40,14 @@ main {
   padding-bottom: 50px;
 }
 .noOther > div .launching {
+  padding-top: 30px;
   color: #ff3998;
 }
 .noOther > div img {
   width: 200px;
 }
 .noOther > div p {
-  color: #777777;
+  color: #555555;
 }
 
 .signUpButton {
@@ -83,16 +85,21 @@ main {
   display: none;
 }
 
+.auction {
+  height: 700px;
+  border-bottom: solid 2px #eeeeee;
+}
+
 .auctionText h2 {
   margin-top: 60px;
   font-size: 40px;
 }
 .auctionText p {
-  color: #777777;
+  color: #555555;
   font-size: 22px;
 }
 .auctionText a {
-  color: #777777;
+  color: #555555;
 }
 
 .auctionOffers {
@@ -108,7 +115,7 @@ article .offerBottom {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #cccccc;
+  background-color: #eeeeee;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 0 25px;
@@ -141,4 +148,63 @@ article h3 {
 }
 article .bottomBot {
   padding-bottom: 20px;
+}
+
+.noOtherBottom {
+  padding-top: 35px;
+  border-bottom: solid 2px #eeeeee;
+}
+.noOtherBottom > div {
+  display: flex;
+  flex-direction: row;
+}
+.noOtherBottom .launching {
+  color: #ff3998;
+}
+.noOtherBottom h1 {
+  font-size: 40px;
+}
+.noOtherBottom .noOtherRight {
+  position: relative;
+}
+.noOtherBottom button {
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: white;
+}
+footer .container {
+  padding-top: 50px;
+  color: #999999;
+}
+footer .footLeft p {
+  padding: 10px 0;
+}
+footer .footLeft i {
+  padding-right: 10px;
+  padding-bottom: 30px;
+}
+footer .footRight {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+footer .footRight nav {
+  display: flex;
+  flex-direction: column;
+}
+footer .footRight h4 {
+  margin-bottom: 15px;
+}
+footer .footRight a {
+  text-decoration: none;
+  color: #999999;
+  padding: 5px 0;
+}
+footer .footBottom {
+  padding-bottom: 80px;
+}
+footer .footBottom p:nth-child(2) {
+  display: none;
 }/*# sourceMappingURL=index.css.map */
