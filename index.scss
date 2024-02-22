@@ -120,70 +120,71 @@ main {
 .auction {
   height: 700px;
   border-bottom: solid 2px #eeeeee;
-}
-.auctionText {
-  h2 {
-    margin-top: 60px;
-    font-size: 40px;
-  }
-  p {
-    color: $gray1;
-    font-size: 22px;
-  }
-  a {
-    color: $gray1;
-  }
-}
-.auctionOffers {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
-article {
-  width: 290px;
-  .offerBottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: $gray5;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 0 25px;
-    margin-top: -5px;
-  }
-  .offerBottom > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .bottomTop {
-    padding-top: 20px;
-  }
-  .series {
-    color: #ff8039;
-  }
-  .price {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-  }
-  p {
-    color: #999999;
-    font-size: 12px;
-    margin: 1px 0;
-  }
-  h3 {
-    margin: 10px 0;
-  }
-
-  .bottomBot {
-    padding-bottom: 20px;
+  .auctionText {
+    h2 {
+      margin-top: 60px;
+      font-size: 40px;
+    }
     p {
-      font-size: 16px;
+      color: $gray1;
+      font-size: 22px;
+    }
+    a {
+      color: $gray1;
+    }
+  }
+  .auctionOffers {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  article {
+    width: 290px;
+    .offerBottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: $gray5;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 0 25px;
+      margin-top: -5px;
+    }
+    .offerBottom > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .bottomTop {
+      padding-top: 20px;
+    }
+    .series {
+      color: #ff8039;
+    }
+    .price {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+    p {
+      color: #999999;
+      font-size: 12px;
+      margin: 1px 0;
+    }
+    h3 {
+      margin: 10px 0;
+    }
+
+    .bottomBot {
+      padding-bottom: 20px;
+      p {
+        font-size: 16px;
+      }
     }
   }
 }
+
 .noOtherBottom {
   background-image: url(Images/other/upsell-footer-image.svg);
   background-size: auto;
@@ -262,6 +263,128 @@ footer {
     font-size: 20px;
     p:nth-child(2) {
       display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 429px) {
+  header {
+    width: 1440px;
+    padding-bottom: 40px;
+    .burger {
+      display: none;
+    }
+    nav {
+      display: block;
+      a {
+        padding-left: 10px;
+        text-decoration: none;
+        color: $gray1;
+      }
+      a:nth-child(4) {
+        color: $pink;
+      }
+    }
+  }
+  main {
+    width: 1440px;
+    .noOther {
+      background-image: none;
+      padding-bottom: 100px;
+      .container {
+        padding-bottom: 0;
+      }
+      .noOtherLeft {
+        width: 65%;
+        h1 {
+          font-size: 70px;
+          line-height: 75px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+      .noOtherRight {
+        img {
+          display: block;
+          width: 110%;
+        }
+      }
+    }
+    .earlyBirds {
+      width: 85%;
+      margin: auto;
+      height: 200px;
+      background-position-x: unset;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding-bottom: 50px;
+      .container {
+        padding-top: 20px;
+      }
+    }
+    .companies {
+      .container {
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        img {
+          width: 13%;
+        }
+      }
+      .hideInMobile {
+        display: block;
+      }
+    }
+    .auction {
+      height: auto;
+      padding-bottom: 100px;
+      .auctionOffers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .noOtherBottom {
+      background-image: none;
+      height: auto;
+      .container {
+        display: flex;
+        height: 480px;
+      }
+      .noOtherBottomLeft {
+        width: 50%;
+      }
+      .noOtherBottomRight {
+        display: unset;
+        width: 45%;
+        background-image: url(Images/other/upsell-footer-image.svg);
+        background-size: auto;
+        background-position-x: 300px;
+        background-position-y: 20px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  footer {
+    width: 1440px;
+    .footTop {
+      display: flex;
+      justify-content: space-between;
+      .footRight {
+        display: flex;
+        gap: 100px;
+      }
+    }
+    .footBottom {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      p:nth-child(2) {
+        display: unset;
+      }
     }
   }
 }

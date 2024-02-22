@@ -115,29 +115,26 @@ main {
   height: 700px;
   border-bottom: solid 2px #eeeeee;
 }
-
-.auctionText h2 {
+.auction .auctionText h2 {
   margin-top: 60px;
   font-size: 40px;
 }
-.auctionText p {
+.auction .auctionText p {
   color: #555555;
   font-size: 22px;
 }
-.auctionText a {
+.auction .auctionText a {
   color: #555555;
 }
-
-.auctionOffers {
+.auction .auctionOffers {
   display: flex;
   flex-direction: row;
   gap: 40px;
 }
-
-article {
+.auction article {
   width: 290px;
 }
-article .offerBottom {
+.auction article .offerBottom {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -147,35 +144,35 @@ article .offerBottom {
   padding: 0 25px;
   margin-top: -5px;
 }
-article .offerBottom > div {
+.auction article .offerBottom > div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-article .bottomTop {
+.auction article .bottomTop {
   padding-top: 20px;
 }
-article .series {
+.auction article .series {
   color: #ff8039;
 }
-article .price {
+.auction article .price {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
-article p {
+.auction article p {
   color: #999999;
   font-size: 12px;
   margin: 1px 0;
 }
-article h3 {
+.auction article h3 {
   margin: 10px 0;
 }
-article .bottomBot {
+.auction article .bottomBot {
   padding-bottom: 20px;
 }
-article .bottomBot p {
+.auction article .bottomBot p {
   font-size: 16px;
 }
 
@@ -257,4 +254,122 @@ footer .footBottom {
 }
 footer .footBottom p:nth-child(2) {
   display: none;
+}
+
+@media screen and (min-width: 429px) {
+  header {
+    width: 1440px;
+    padding-bottom: 40px;
+  }
+  header .burger {
+    display: none;
+  }
+  header nav {
+    display: block;
+  }
+  header nav a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #555555;
+  }
+  header nav a:nth-child(4) {
+    color: #ff3998;
+  }
+  main {
+    width: 1440px;
+  }
+  main .noOther {
+    background-image: none;
+    padding-bottom: 100px;
+  }
+  main .noOther .container {
+    padding-bottom: 0;
+  }
+  main .noOther .noOtherLeft {
+    width: 65%;
+  }
+  main .noOther .noOtherLeft h1 {
+    font-size: 70px;
+    line-height: 75px;
+  }
+  main .noOther .noOtherLeft p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  main .noOther .noOtherRight img {
+    display: block;
+    width: 110%;
+  }
+  main .earlyBirds {
+    width: 85%;
+    margin: auto;
+    height: 200px;
+    background-position-x: unset;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+  }
+  main .earlyBirds .container {
+    padding-top: 20px;
+  }
+  main .companies .container {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  main .companies .container img {
+    width: 13%;
+  }
+  main .companies .hideInMobile {
+    display: block;
+  }
+  main .auction {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  main .auction .auctionOffers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  main .noOtherBottom {
+    background-image: none;
+    height: auto;
+  }
+  main .noOtherBottom .container {
+    display: flex;
+    height: 480px;
+  }
+  main .noOtherBottom .noOtherBottomLeft {
+    width: 50%;
+  }
+  main .noOtherBottom .noOtherBottomRight {
+    display: unset;
+    width: 45%;
+    background-image: url(Images/other/upsell-footer-image.svg);
+    background-size: auto;
+    background-position-x: 300px;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+  }
+  footer {
+    width: 1440px;
+  }
+  footer .footTop {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .footTop .footRight {
+    display: flex;
+    gap: 100px;
+  }
+  footer .footBottom {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .footBottom p:nth-child(2) {
+    display: unset;
+  }
 }/*# sourceMappingURL=index.css.map */
