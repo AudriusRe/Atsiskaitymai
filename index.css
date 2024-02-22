@@ -57,7 +57,7 @@ main {
 }
 .noOther > div .noOtherLeft .launching {
   padding-top: 30px;
-  color: #ff3998;
+  color: #ff2b91;
 }
 .noOther > div .noOtherLeft h1 {
   line-height: 60px;
@@ -74,11 +74,12 @@ main {
 }
 
 .signUpButton {
+  background: linear-gradient(white, white) padding-box, linear-gradient(50deg, violet, red, rgb(255, 123, 0), rgb(165, 87, 42)) border-box;
+  padding: 15px 40px;
+  border: 4px solid transparent;
   border-radius: 40px;
-  border: solid 5px black;
-  padding: 20px 50px;
-  background-color: transparent;
-  font-weight: bold;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .earlyBirds {
@@ -197,7 +198,7 @@ main {
   padding-top: 40px;
 }
 .noOtherBottom .launching {
-  color: #ff3998;
+  color: #ff2b91;
   margin: 0;
 }
 .noOtherBottom h1 {
@@ -279,12 +280,13 @@ footer .footBottom p:nth-child(2) {
     color: #555555;
   }
   header nav a:nth-child(4) {
-    color: #ff3998;
+    color: #ff2b91;
   }
   main {
     width: 1440px;
   }
   main .noOther {
+    height: auto;
     background-image: none;
     padding-bottom: 100px;
   }
@@ -298,6 +300,8 @@ footer .footBottom p:nth-child(2) {
     font-size: 70px;
     line-height: 75px;
     font-weight: 900;
+    margin: 0;
+    padding-bottom: 40px;
   }
   main .noOther .noOtherLeft p {
     font-size: 18px;

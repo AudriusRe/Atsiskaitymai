@@ -1,13 +1,11 @@
-$gray1: #555555;
-$gray2: #777777;
-$gray3: #999999;
-$gray4: #cccccc;
-$gray5: #eeeeee;
-$orange: #ff8039;
-$pink: #ff3998;
-$green: #39ffa0;
-$light-green: #edfff6;
-$light-orange: #fff0e8;
+$grey1: #555555;
+$grey2: #999999;
+$grey3: #eeeeee;
+$pink: #ff2b91;
+$violet: violet;
+$red: red;
+$orange: rgb(255, 123, 0);
+$brown: rgb(165, 87, 42);
 
 html {
   font-family: "Roboto", sans-serif;
@@ -31,7 +29,7 @@ header {
     align-items: center;
   }
   .burger {
-    color: $gray3;
+    color: $grey2;
     font-size: 25px;
   }
   nav {
@@ -67,7 +65,7 @@ main {
         font-size: 50px;
       }
       p {
-        color: $gray1;
+        color: $grey1;
         font-size: 25px;
         line-height: 35px;
         padding-bottom: 20px;
@@ -81,11 +79,13 @@ main {
   }
 }
 .signUpButton {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(50deg, $violet, $red, $orange, $brown) border-box;
+  padding: 15px 40px;
+  border: 4px solid transparent;
   border-radius: 40px;
-  border: solid 5px black;
-  padding: 20px 50px;
-  background-color: transparent;
-  font-weight: bold;
+  display: inline-block;
+  font-size: 20px;
 }
 .earlyBirds {
   .container {
@@ -128,11 +128,11 @@ main {
       font-weight: 400;
     }
     p {
-      color: $gray1;
+      color: $grey1;
       font-size: 22px;
     }
     a {
-      color: $gray1;
+      color: $grey1;
     }
   }
   .auctionOffers {
@@ -146,7 +146,7 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background-color: $gray5;
+      background-color: $grey3;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
       padding: 0 25px;
@@ -212,7 +212,7 @@ main {
     font-weight: 900;
   }
   p {
-    color: $gray1;
+    color: $grey1;
     font-size: 22px;
     line-height: 35px;
     span {
@@ -232,7 +232,7 @@ footer {
 
   .container {
     padding-top: 50px;
-    color: $gray1;
+    color: $grey1;
   }
   .footLeft {
     p {
@@ -241,7 +241,7 @@ footer {
     i {
       padding-right: 10px;
       padding-bottom: 30px;
-      color: $gray3;
+      color: $grey2;
     }
   }
   .footRight {
@@ -257,14 +257,14 @@ footer {
     }
     a {
       text-decoration: none;
-      color: $gray1;
+      color: $grey1;
       padding: 5px 0;
     }
   }
   .footBottom {
     padding-top: 20px;
     padding-bottom: 70px;
-    color: $gray3;
+    color: $grey2;
     font-size: 20px;
     p:nth-child(2) {
       display: none;
@@ -284,7 +284,7 @@ footer {
       a {
         padding-left: 10px;
         text-decoration: none;
-        color: $gray1;
+        color: $grey1;
       }
       a:nth-child(4) {
         color: $pink;
@@ -294,6 +294,7 @@ footer {
   main {
     width: 1440px;
     .noOther {
+      height: auto;
       background-image: none;
       padding-bottom: 100px;
       .container {
@@ -305,6 +306,8 @@ footer {
           font-size: 70px;
           line-height: 75px;
           font-weight: 900;
+          margin: 0;
+          padding-bottom: 40px;
         }
         p {
           font-size: 18px;
