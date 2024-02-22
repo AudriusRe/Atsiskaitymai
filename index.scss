@@ -32,7 +32,7 @@ header {
   }
   .burger {
     color: $gray3;
-    font-size: 20px;
+    font-size: 25px;
   }
   nav {
     display: none;
@@ -95,7 +95,7 @@ main {
   background-image: url(Images/other/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: -150px;
+  background-position-x: -250px;
   h3 {
     font-size: 40px;
   }
@@ -120,10 +120,12 @@ main {
 .auction {
   height: 700px;
   border-bottom: solid 2px #eeeeee;
+  overflow-x: hidden;
   .auctionText {
     h2 {
       margin-top: 60px;
       font-size: 40px;
+      font-weight: 400;
     }
     p {
       color: $gray1;
@@ -184,7 +186,6 @@ main {
     }
   }
 }
-
 .noOtherBottom {
   background-image: url(Images/other/upsell-footer-image.svg);
   background-size: auto;
@@ -208,12 +209,15 @@ main {
   }
   h1 {
     font-size: 50px;
+    font-weight: 900;
   }
   p {
     color: $gray1;
     font-size: 22px;
     line-height: 35px;
-    padding-bottom: 20px;
+    span {
+      display: none;
+    }
   }
   .noOtherBottomRight {
     display: none;
@@ -258,7 +262,8 @@ footer {
     }
   }
   .footBottom {
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 70px;
     color: $gray3;
     font-size: 20px;
     p:nth-child(2) {
@@ -299,6 +304,7 @@ footer {
         h1 {
           font-size: 70px;
           line-height: 75px;
+          font-weight: 900;
         }
         p {
           font-size: 18px;
@@ -315,7 +321,7 @@ footer {
     .earlyBirds {
       width: 85%;
       margin: auto;
-      height: 200px;
+      height: 300px;
       background-position-x: unset;
       background-size: 100%;
       background-repeat: no-repeat;
@@ -342,9 +348,13 @@ footer {
     .auction {
       height: auto;
       padding-bottom: 100px;
+      .auctionText {
+        padding-bottom: 25px;
+      }
       .auctionOffers {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        gap: 9px;
       }
     }
     .noOtherBottom {
@@ -355,7 +365,16 @@ footer {
         height: 480px;
       }
       .noOtherBottomLeft {
-        width: 50%;
+        width: 45%;
+        h1 {
+          font-weight: 900;
+          letter-spacing: 2px;
+        }
+        p {
+          span {
+            display: unset;
+          }
+        }
       }
       .noOtherBottomRight {
         display: unset;
