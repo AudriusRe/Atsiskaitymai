@@ -14,9 +14,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  margin: auto;
   background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header {
+  width: 428px;
   background-color: white;
   .container {
     padding-top: 30px;
@@ -34,61 +39,83 @@ header {
   }
 }
 main {
+  width: 428px;
   background-color: white;
 }
 .container {
-  width: 90%;
+  width: 85%;
   margin: auto;
 }
-.noOther > div {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 50px;
-
-  .launching {
-    padding-top: 30px;
-    color: $pink;
-  }
-  img {
-    width: 200px;
-  }
-  p {
-    color: $gray1;
+.noOther {
+  background-image: url(Images/other/graphic.png);
+  background-size: cover;
+  background-position-x: 150px;
+  background-position-y: -30px;
+  background-repeat: no-repeat;
+  > div {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+    .noOtherLeft {
+      width: 80%;
+      .launching {
+        padding-top: 30px;
+        color: $pink;
+      }
+      h1 {
+        line-height: 60px;
+        font-size: 50px;
+      }
+      p {
+        color: $gray1;
+        font-size: 25px;
+        line-height: 35px;
+        padding-bottom: 20px;
+      }
+    }
+    .noOtherRight {
+      img {
+        display: none;
+      }
+    }
   }
 }
 .signUpButton {
-  background-color: white;
-  padding: 20px 50px;
-  border: solid 5px black;
-  // border-image-repeat: round;
-  // border-image-slice: 10;
-  // border-image-source: url(Images/other/background.svg);
   border-radius: 40px;
+  border: solid 5px black;
+  padding: 20px 50px;
+  background-color: transparent;
+  font-weight: bold;
 }
 .earlyBirds {
   .container {
-    padding-top: 100px;
+    padding-top: 80px;
   }
   height: 350px;
   background-image: url(Images/other/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: -150px;
   h3 {
     font-size: 40px;
   }
   p {
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
-.companies > .container {
-  margin-top: 60px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 10px;
-}
-.hideInMobile {
-  display: none;
+.companies {
+  > .container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    justify-content: center;
+  }
+  .hideInMobile {
+    display: none;
+  }
 }
 .auction {
   height: 700px;
@@ -113,7 +140,7 @@ main {
   gap: 40px;
 }
 article {
-  width: 80%;
+  width: 290px;
   .offerBottom {
     display: flex;
     flex-direction: column;
@@ -143,7 +170,7 @@ article {
   }
   p {
     color: #999999;
-    font-size: 15px;
+    font-size: 12px;
     margin: 1px 0;
   }
   h3 {
@@ -152,34 +179,55 @@ article {
 
   .bottomBot {
     padding-bottom: 20px;
+    p {
+      font-size: 16px;
+    }
   }
 }
 .noOtherBottom {
+  background-image: url(Images/other/upsell-footer-image.svg);
+  background-size: auto;
+  background-position-x: 250px;
+  background-position-y: 220px;
+  background-repeat: no-repeat;
   padding-top: 35px;
+  height: 650px;
   border-bottom: solid 2px #eeeeee;
   > div {
     display: flex;
     flex-direction: row;
   }
+  .noOtherBottomLeft {
+    width: 60%;
+    padding-top: 40px;
+  }
   .launching {
     color: $pink;
+    margin: 0;
   }
   h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
-  .noOtherRight {
-    position: relative;
+  p {
+    color: $gray1;
+    font-size: 22px;
+    line-height: 35px;
+    padding-bottom: 20px;
+  }
+  .noOtherBottomRight {
+    display: none;
   }
   button {
     margin-bottom: 50px;
   }
 }
 footer {
+  width: 428px;
   background-color: white;
 
   .container {
     padding-top: 50px;
-    color: #999999;
+    color: $gray1;
   }
   .footLeft {
     p {
@@ -188,6 +236,7 @@ footer {
     i {
       padding-right: 10px;
       padding-bottom: 30px;
+      color: $gray3;
     }
   }
   .footRight {
@@ -203,12 +252,14 @@ footer {
     }
     a {
       text-decoration: none;
-      color: #999999;
+      color: $gray1;
       padding: 5px 0;
     }
   }
   .footBottom {
     padding-bottom: 80px;
+    color: $gray3;
+    font-size: 20px;
     p:nth-child(2) {
       display: none;
     }

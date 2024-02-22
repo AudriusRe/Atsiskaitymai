@@ -4,10 +4,15 @@ html {
 }
 
 body {
+  margin: auto;
   background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
+  width: 428px;
   background-color: white;
 }
 header .container {
@@ -26,35 +31,54 @@ header nav {
 }
 
 main {
+  width: 428px;
   background-color: white;
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: auto;
 }
 
+.noOther {
+  background-image: url(Images/other/graphic.png);
+  background-size: cover;
+  background-position-x: 150px;
+  background-position-y: -30px;
+  background-repeat: no-repeat;
+}
 .noOther > div {
   display: flex;
   flex-direction: row;
   padding-bottom: 50px;
 }
-.noOther > div .launching {
+.noOther > div .noOtherLeft {
+  width: 80%;
+}
+.noOther > div .noOtherLeft .launching {
   padding-top: 30px;
   color: #ff3998;
 }
-.noOther > div img {
-  width: 200px;
+.noOther > div .noOtherLeft h1 {
+  line-height: 60px;
+  font-size: 50px;
 }
-.noOther > div p {
+.noOther > div .noOtherLeft p {
   color: #555555;
+  font-size: 25px;
+  line-height: 35px;
+  padding-bottom: 20px;
+}
+.noOther > div .noOtherRight img {
+  display: none;
 }
 
 .signUpButton {
-  background-color: white;
-  padding: 20px 50px;
-  border: solid 5px black;
   border-radius: 40px;
+  border: solid 5px black;
+  padding: 20px 50px;
+  background-color: transparent;
+  font-weight: bold;
 }
 
 .earlyBirds {
@@ -62,15 +86,17 @@ main {
   background-image: url(Images/other/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: -150px;
 }
 .earlyBirds .container {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .earlyBirds h3 {
   font-size: 40px;
 }
 .earlyBirds p {
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 28px;
 }
 
 .companies > .container {
@@ -79,9 +105,9 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 10px;
+  justify-content: center;
 }
-
-.hideInMobile {
+.companies .hideInMobile {
   display: none;
 }
 
@@ -109,7 +135,7 @@ main {
 }
 
 article {
-  width: 80%;
+  width: 290px;
 }
 article .offerBottom {
   display: flex;
@@ -140,7 +166,7 @@ article .price {
 }
 article p {
   color: #999999;
-  font-size: 15px;
+  font-size: 12px;
   margin: 1px 0;
 }
 article h3 {
@@ -149,34 +175,55 @@ article h3 {
 article .bottomBot {
   padding-bottom: 20px;
 }
+article .bottomBot p {
+  font-size: 16px;
+}
 
 .noOtherBottom {
+  background-image: url(Images/other/upsell-footer-image.svg);
+  background-size: auto;
+  background-position-x: 250px;
+  background-position-y: 220px;
+  background-repeat: no-repeat;
   padding-top: 35px;
+  height: 650px;
   border-bottom: solid 2px #eeeeee;
 }
 .noOtherBottom > div {
   display: flex;
   flex-direction: row;
 }
+.noOtherBottom .noOtherBottomLeft {
+  width: 60%;
+  padding-top: 40px;
+}
 .noOtherBottom .launching {
   color: #ff3998;
+  margin: 0;
 }
 .noOtherBottom h1 {
-  font-size: 40px;
+  font-size: 50px;
 }
-.noOtherBottom .noOtherRight {
-  position: relative;
+.noOtherBottom p {
+  color: #555555;
+  font-size: 22px;
+  line-height: 35px;
+  padding-bottom: 20px;
+}
+.noOtherBottom .noOtherBottomRight {
+  display: none;
 }
 .noOtherBottom button {
   margin-bottom: 50px;
 }
 
 footer {
+  width: 428px;
   background-color: white;
 }
 footer .container {
   padding-top: 50px;
-  color: #999999;
+  color: #555555;
 }
 footer .footLeft p {
   padding: 10px 0;
@@ -184,6 +231,7 @@ footer .footLeft p {
 footer .footLeft i {
   padding-right: 10px;
   padding-bottom: 30px;
+  color: #999999;
 }
 footer .footRight {
   display: grid;
@@ -199,11 +247,13 @@ footer .footRight h4 {
 }
 footer .footRight a {
   text-decoration: none;
-  color: #999999;
+  color: #555555;
   padding: 5px 0;
 }
 footer .footBottom {
   padding-bottom: 80px;
+  color: #999999;
+  font-size: 20px;
 }
 footer .footBottom p:nth-child(2) {
   display: none;
